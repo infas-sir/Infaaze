@@ -1,20 +1,17 @@
-const buttons = document.querySelectorAll(".card-buttons button");
-const sections = document.querySelectorAll(".card-section");
-const card = document.querySelector(".card");
+var options = {
+  strings: ["<i>First</i> sentence.", "amp; introducing about me", "Your Order Has Been Placed :2370628
 
-const handleButtonClick = e => {
-  const targetSection = e.target.getAttribute("data-section");
-  const section = document.querySelector(targetSection);
-  targetSection !== "#about" ?
-  card.classList.add("is-active") :
-  card.classList.remove("is-active");
-  card.setAttribute("data-state", targetSection);
-  sections.forEach(s => s.classList.remove("is-active"));
-  buttons.forEach(b => b.classList.remove("is-active"));
-  e.target.classList.add("is-active");
-  section.classList.add("is-active");
-};
 
-buttons.forEach(btn => {
-  btn.addEventListener("click", handleButtonClick);
-});
+Service :
+IG » Views + Tv + Reels [ New - Fastest - Instant ] 🔥
+
+Link :
+https://www.instagram.com/reel/CwnXloyPLTH/?igshid=MzRlODBiNWFlZA==
+
+Quantity :8000
+
+"],
+  typeSpeed: 10
+}
+
+var typed = new Typed(".typed_text", options);
